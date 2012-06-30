@@ -4,7 +4,6 @@ import requests
 BASE_URL = 'http://developer.cumtd.com/api/'
 API_VERSION = 'v2.1'
 
-
 class CumtdApi:
     key = None
     # TODO: Add XML support if there's a demand
