@@ -4,6 +4,13 @@ import requests
 BASE_URL = 'http://developer.cumtd.com/api/'
 API_VERSION = 'v2.1'
 
+"""
+Python library implementation of the Champaign-Urbana Mass Transit
+District's REST API. Adheres very closely to the (excellent) documentation
+available here: http://developer.cumtd.com/
+
+Functions return a python dictionary of the parsed JSON result.
+"""
 class CumtdApi:
     key = None
     # TODO: Add XML support if there's a demand
