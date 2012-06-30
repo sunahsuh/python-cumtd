@@ -72,7 +72,7 @@ class CumtdApi:
     def get_stop_times_by_trip(self, trip_id):
         return self._make_mtd_request('GetStopTimesByTrip', locals())
 
-    def get_stop_times_by_stop(self, stop_id, route_id = None, date = None)
+    def get_stop_times_by_stop(self, stop_id, route_id = None, date = None):
         if (type(route_id) is list):
             route_id = ''.join(stop_id, ';')
         return self._make_mtd_request('GetStopTimesByStop', locals())
